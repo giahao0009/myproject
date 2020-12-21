@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" />
+    <title>BigShopOur</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="./assets/js/jquery.js"></script>
+</head>
+
+<body class="modal-open" id="body">
+
+    <div class="app">
+        <header class="header rainbow-box">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li
+                            class="header__navbar-item header__navbar-item--has-qr  header__navbar-item--separate  header__navbar-item--has--qr">
+                            Sử dụng ứng dụng bằng điện thoại
+                            <!-- Header QR code -->
+                            <div class="header__qr">
+                                <img src="./assets/img/QR_CODE.png" alt="QR Code" class="header_qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/Google_play.png" alt="Google play"
+                                            class="header__qr-download-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/App_store.png" alt="App store"
+                                            class="header__qr-download-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer">Kết nối</span>
+                            <a href="https://www.facebook.com/" class="header__navbar-icon-link">
+                                <i class=" header__navbar-icon fab fa-facebook-square"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="header__navbar-icon-link">
+                                <i class=" header__navbar-icon fab fa-instagram-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="/notification.html" class="header__navbar-item-link">
+                                <i class=" header__navbar-icon fas fa-bell"></i>
+                                Thông báo
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./contact.html" class="header__navbar-item-link">
+                                <i class=" header__navbar-icon fas fa-question-circle"></i>
+                                Liên hệ</a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate"
+                            id="myBtnRegister">Đăng
+                            ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong" id="myBtnLogin">Đăng nhập</li>
+                    </ul>
+                </nav>
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="./assets/img/logo.png" class="header__logo-img"></a>
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm">
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="header__cart">
+                        <div class="hearder__cart-wrap">
+                            <a href="./cart.html"><i class="header__cart-icon fas fa-shopping-cart"></i></a>
+                            <div class="header__cart-list header__cart-list--no-cart">
+                                <img src="./assets/img/empty_cart.jpg" alt="" class="header__cart-no-cart-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="./assets/img/img-sale-50.jpg" class="slideshow__img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./assets/img/img-sale-50-1.jpg" class="slideshow__img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./assets/img/img-sale-50-2.jpg" class="slideshow__img">
+            </div>
+            <div style="text-align:center;">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <div class="app__container img-homepage">
+            <div class="grid">
+                <div class="grid__row">
+                    <!-- Danh muc san pham -->
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading text-center">Danh mục</h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active dropdown">
+                                    <a href="" class="category-item__link dropbtn">Áo</a>
+                                    <div class="dropdown-content">
+                                        <a href="">Sơ mi</a>
+                                        <a href="">Áo thun</a>
+                                        <a href="">Áo thun form rộng</a>
+                                        <a href="">Áo thun ba lỗ</a>
+                                        <a href="">Áo tay dài</a>
+                                    </div>
+                                </li>
+                                <li class="category-item category-item--active dropdown">
+                                    <a href="" class="category-item__link dropbtn">Áo khoác</a>
+                                    <div class="dropdown-content">
+                                        <a href="">Áo khoác kaki-Thun</a>
+                                        <a href="">Áo khoác dù</a>
+                                        <a href="">Áo hoodie</a>
+                                    </div>
+                                </li>
+                                <li class="category-item category-item--active dropdown">
+                                    <a href="" class="category-item__link dropbtn">Quần</a>
+                                    <div class="dropdown-content">
+                                        <a href="">Quần jean cá tính</a>
+                                        <a href="">Quần jean đơn giản</a>
+                                        <a href="">Quần Jogger</a>
+                                        <a href="">Quần Kaki</a>
+                                        <a href="">Quần Tây</a>
+                                    </div>
+                                </li>
+                                <li class="category-item category-item--active">
+                                    <a href="" class="category-item__link">Balo</a>
+                                </li>
+                                <li class="category-item category-item--active dropdown">
+                                    <a href="" class="category-item__link dropbtn">Giày</a>
+                                    <div class="dropdown-content">
+                                        <a href="">Giày sale</a>
+                                        <a href="">Giày da thật</a>
+                                    </div>
+                                </li>
+                                <li class="catergory-item category-item--active">
+                                    <a href="" class="category-item__link">Khác</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <img src="./assets/img/White and Green Skincare CPG Story Ads.gif" alt="hinh-anh-gioi-thieu"
+                            style="width: 100%; height: 20%;">
+                        <img src="./assets/img/Red and Gold Dotted Christmas Sale Facebook Story Ad.gif"
+                            alt="hinh-anh-gioi-thieu" style="width: 100%; height: 34%;">
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp</span>
+                            <button class="btn home-filter__btn">Phổ biến</button>
+                            <button class="btn home-filter__btn">Mới nhất</button>
+                            <button class="btn home-filter__btn">Bán chạy</button>
+                        </div>
+                        <div class="home-product">
+                            <!-- Grid -> row ->column -->
+                            <div class="grid__row" id="listProduct">
+                                <!--Khu vực dùng để render sản phẩm  -->
+                            </div>
+                            <div class="product-paging">
+                                <button class="btn product__btn-pre" id="btnPre">Previous</button>
+                                <div class="product__number-page" id="numberPage">
+                                    <!-- <a class="btn">1</a>
+                                    <a class="btn">1</a>
+                                    <a class="btn">1</a>
+                                    <a class="btn">1</a> -->
+                                </div>
+                                <button class="btn product__btn-next" id="btnNext">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid ">
+                <div class="grid__row">
+                    <div class="grid__full-width content-new-product">
+                        <h2 class="text-center content-new-product__title">NEW</h3>
+                            <div class="content-new__hr">
+                                <hr width="600px" class="new-item-hr rainbow-box">
+                                <div class="text new-item-hr new-item-icon">🎁</div>
+                                <hr width="600px" class="new-item-hr rainbow-box">
+                            </div>
+                    </div>
+                    <div class="grid__row" style="margin-top: 20px;">
+                        <div class="grid__column-2-4 slideProduct sliderProduct">
+                            <img src="./assets/img/san-pham-14.webp" width="100%" alt="san-pham">
+                        </div>
+                        <div class="grid__column-2-4 slideProduct sliderProduct">
+                            <img src="./assets/img/san-pham-16.webp" width="100%" alt="san-pham">
+                        </div>
+                        <div class="grid__column-2-4 slideProduct sliderProduct">
+                            <img src="./assets/img/san-pham-19.webp" width="100%" alt="san-pham">
+                        </div>
+                        <div class="grid__column-2-4 slideProduct sliderProduct">
+                            <img src="./assets/img/san-pham-24.webp" width="100%" alt="san-pham">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid ">
+                <div class="grid__row">
+                    <div class="grid__full-width content-new-product">
+                        <h2 class="text-center content-new-product__title">HOT</h3>
+                            <div class="content-new__hr">
+                                <hr width="600px" class="new-item-hr rainbow-box">
+                                <div class="text new-item-hr new-item-icon">🎄</div>
+                                <hr width="600px" class="new-item-hr rainbow-box">
+                            </div>
+                    </div>
+                    <div class="grid__row" style="margin-top: 20px;">
+                        <div class="grid__column-2-4 slideProduct sliderProduct">
+                            <img src="./assets/img/san-pham-8.webp" width="100%" alt="san-pham">
+                        </div>
+                        <div class="grid__column-2-4 slideProduct sliderProduct">
+                            <img src="./assets/img/san-pham-9.webp" width="100%" alt="san-pham">
+                        </div>
+                        <div class="grid__column-2-4 slideProduct sliderProduct">
+                            <img src="./assets/img/san-pham-10.webp" width="100%" alt="san-pham">
+                        </div>
+                        <div class="grid__column-2-4 slideProduct sliderProduct">
+                            <img src="./assets/img/san-pham-11.webp" width="100%" alt="san-pham">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid ">
+                <div class="grid__row">
+                    <div class="grid__full-width content-new-product">
+                        <h2 class="text-center content-new-product__title">DEAL 50%</h3>
+                            <div class="content-new__hr">
+                                <div class="new-item-hr">
+                                    <hr width="600px" class="rainbow-box">
+                                </div>
+                                <div class="text new-item-hr new-item-icon">🎅</div>
+                                <div class="new-item-hr">
+                                    <hr width="600px" class="rainbow-box">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="grid__row" style="margin-top: 20px;">
+                        <div class="grid__column-2-4 slideProduct sliderProduct">
+                            <img src="./assets/img/san-pham-41.webp" width="100%" alt="san-pham">
+                        </div>
+                        <div class="grid__column-2-4 slideProduct sliderProduct">
+                            <img src="./assets/img/san-pham-42.webp" width="100%" alt="san-pham">
+                        </div>
+                        <div class="grid__column-2-4 slideProduct sliderProduct">
+                            <img src="./assets/img/san-pham-45.webp" width="100%" alt="san-pham">
+                        </div>
+                        <div class="grid__column-2-4 slideProduct sliderProduct">
+                            <img src="./assets/img/san-pham-26.webp" width="100%" alt="san-pham">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer rainbow-box">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__text"><a href="" class="footer__text-link">CHÍNH SÁCH BẢO MẬT</a></h3>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__text"><a href="" class="footer__text-link">QUY CHẾ HOẠT ĐỘNG</a></h3>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__text"><a href="" class="footer__text-link">CHÍNH SÁCH VẬN CHUYỂN</a></h3>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__text"><a href="" class="footer__text-link">CHÍNH SÁCH HOÀN TIỀN</a></h3>
+                    </div>
+                </div>
+                <div class="grid__row" style="text-align: right; margin-top: 15px;">
+                    <div class="grid__column-6">
+                        <img src="./assets/img/20150827110756-dadangky.png" alt="da-dang-ky-cong-thuong" width="25%">
+                    </div>
+                    <div class="grid__column-6" style="text-align: left;">
+                        <img src="./assets/img/dathongbao1.png" alt="da-thong-bao-cong-thuong" width="25%">
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <p>Cửa hàng quần áo BigShopOur</p>
+                    <p>Địa chỉ: Tầng 28, Tòa nhà Landmark 81, 208 Nguyễn Hữu Cảnh, Phường 12, Quận Bình Thạnh, Thành Phố
+                        Hồ Chí Minh - Email: cskh@hotro.bigshopour.com</p>
+                    <p>Mã số doanh nghiệp: 094800501258 do Sở Kế hoạch & Đầu tư TP Hồ Chí Minh cấp lần đầu ngày
+                        08/12/2020</p>
+                    <p>&copy 2020 - Bản quyền thuộc về cửa hàng BigShopOur</p>
+                    <p style="color: red;">Nguyễn Gia Hào -19dh110001</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal" id="myModalRegister">
+        <div class="modal__overlay" id="closeTag"></div>
+        <div class="modal__body">
+
+            <!-- Register form -->
+            <div class="auth-form">
+                <span class="close">&times;</span>
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký </h3>
+                        <span class="auth-form__switch-btn" id="btnChangeLogin">Đăng nhập</span>
+                    </div>
+                    <form action="" name="formRegister" onsubmit="return validateFormRegister();">
+                        <div class="auth-form__form">
+
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập tên tài khoản"
+                                    name="user-register">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu"
+                                    name="password-register">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu"
+                                    name="pass-register-confirm">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input" placeholder="Nhập email của bạn"
+                                    name="email">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập số điện thoại"
+                                    name="phone">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form-policy-text">
+                                Bằng việc đăng ký, bạn đã đồng ý với BigShopOur về
+                                <a href="" class="auth-form__policy-text-link">Các điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__policy-text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn auth-form__controls-back .btn--normal" type="reset">Trở lại</button>
+                            <button class="btn btn--primary" type="submit">Đăng ký</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--size-s btn--with-icon auth-form__socials--facebook">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối với google</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="myModalLogin">
+        <div class="modal__overlay" id="closeTagLogin"></div>
+        <div class="modal__body">
+            <!-- Login form -->
+            <div class="auth-form">
+                <span class="close">&times;</span>
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập </h3>
+                        <span class="auth-form__switch-btn" id="btnChangeRegister">Đăng ký</span>
+                    </div>
+                    <form action="" name="formLogin" onsubmit="return validateFormLogin();">
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập tên tài khoản"
+                                    name="user">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu" name="password">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help--forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn auth-form__controls-back .btn--normal">Trở lại</button>
+                            <button class="btn btn--primary">Đăng nhập</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="https://www.facebook.com/"
+                        class="btn btn--size-s btn--with-icon auth-form__socials--facebook">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                    </a>
+                    <a href="https://www.google.com/" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối vGoogle</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+    </div>
+    <!-- JS -->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/slideshow.js"></script>
+    <script src="./assets/js/validationform.js"></script>
+    <script src="./assets/js/pagination.js"></script>
+</body>
+</html>
